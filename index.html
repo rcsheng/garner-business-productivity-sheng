@@ -69,14 +69,14 @@
 
 <!-- ════════════════════════════════════════════ NAV ════════ -->
 <nav class="bg-white border-b border-gray-200 px-4 flex overflow-x-auto sticky top-[57px] z-10">
-  <button class="tab-btn active" onclick="switchTab('sales',this)">💼 Sales Intelligence</button>
-  <button class="tab-btn" onclick="switchTab('csm',this)">🏢 Account Health</button>
+  <button class="tab-btn active" onclick="switchTab('finance',this)">📈 Executive Topline</button>
   <button class="tab-btn" onclick="switchTab('analyst',this)">📊 Claims Analyst</button>
-  <button class="tab-btn" onclick="switchTab('scores',this)">⭐ Score Workbench</button>
   <button class="tab-btn" onclick="switchTab('legal',this)">⚖️ Legal &amp; Compliance</button>
   <button class="tab-btn" onclick="switchTab('people',this)">👥 People &amp; HR</button>
   <button class="tab-btn" onclick="switchTab('talent',this)">🎯 Talent &amp; Recruiting</button>
-  <button class="tab-btn" onclick="switchTab('finance',this)">📈 Finance Intelligence</button>
+  <button class="tab-btn" onclick="switchTab('sales',this)">💼 Sales Intelligence</button>
+  <button class="tab-btn" onclick="switchTab('csm',this)">🏢 Account Health</button>
+  <button class="tab-btn" onclick="switchTab('scores',this)">⭐ Score Workbench</button>
 </nav>
 
 
@@ -86,7 +86,7 @@
      JTBD: Build a compelling, data-backed ROI pitch for any new
            employer prospect — in under 5 minutes
 ═══════════════════════════════════════════════════════════════ -->
-<div id="tab-sales" class="tab-content">
+<div id="tab-sales" class="tab-content hidden">
   <div class="persona-bar">
     <span class="persona-chip">Sales Rep</span>
     <span class="jtbd-text">JTBD: Walk into any new employer meeting with a data-backed ROI pitch — built in under 5 minutes</span>
@@ -1374,7 +1374,7 @@ function renderFinanceView(s) {
 <!-- ════════════════════════════════════════════════════════════
      TAB 8 · FINANCE INTELLIGENCE
 ═══════════════════════════════════════════════════════════════ -->
-<div id="tab-finance" class="tab-content hidden">
+<div id="tab-finance" class="tab-content">
   <div class="persona-bar">
     <span class="persona-chip">Finance</span>
     <span class="jtbd-text">JTBD: Produce board-ready summaries, model revenue scenarios, and explain budget variances — in minutes, not days</span>
